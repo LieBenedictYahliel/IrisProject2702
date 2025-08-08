@@ -1,6 +1,3 @@
-from cProfile import label
-from posixpath import sep
-from turtle import right
 import streamlit as st
 import pandas as pd
 import joblib
@@ -54,5 +51,6 @@ if button:
     label_proba=pred_proba[0][pred[0]]
     output=f"Iris Anda diklasifisikan sebagai {label_proba:0%} {label_pred}"
     st.write(output)
+
 
     
